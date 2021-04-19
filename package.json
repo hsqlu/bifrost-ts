@@ -1,0 +1,26 @@
+{
+    "name": "IOST-Client",
+    "version": "1.0.0",
+    "description": "Upserting a CSV to a local database using Prisma",
+    "license": "MIT",
+    "dependencies": {
+        "@polkadot/api": "^3.1.1",
+        "iost": "^0.1.22"
+    },
+    "devDependencies": {
+        "@polkadot/api": "^3.1.1",
+        "@types/node": "^14.14.22",
+        "demux": "^4.0.0",
+        "demux-iost": "^1.0.2",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.0.5"
+    },
+    "scripts": {
+        "build": "tsc",
+        "prestart": "tsc",
+        "start": "cd dist && node main.js"
+    },
+    "engines": {
+        "node": ">=10.0.0"
+    }
+}
