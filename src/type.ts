@@ -223,7 +223,7 @@ export const IOST_TYPES = {
 
 export const BRIDGE_IOST = {
     proveAction: {
-        description: "Get the token infomation",
+        description: "Prove action: verify block",
         params: [
             {
                 name: "action",
@@ -248,6 +248,30 @@ export const BRIDGE_IOST = {
         method: "proveAction",
         section: "bridgeIost",
     },
+
+    changeSchedule: {
+        description: "Update epoll producer list",
+        params: [
+            {
+                name: "bh",
+                type: "BlockHead",
+            },
+            {
+                name: "witness_headers",
+                type: "Vec<BlockHead>",
+            },
+            {
+                name: "producers",
+                type: "Vec<Vec<u8>>",
+            },
+        ],
+        // type: "u128",
+        isSubscription: false,
+        jsonrpc: "bridgeIost_changeSchedule",
+        method: "changeSchedule",
+        section: "bridgeIost",
+    },
+
 
     initSchedule: {
         description: "Initial IOST producer list",
