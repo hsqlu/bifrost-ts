@@ -5,6 +5,7 @@
     "license": "MIT",
     "dependencies": {
         "@polkadot/api": "^3.1.1",
+        "demux-js-iost": "^2.0.1",
         "iost": "^0.1.22"
     },
     "devDependencies": {
